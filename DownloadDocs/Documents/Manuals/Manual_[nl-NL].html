@@ -1,0 +1,282 @@
+﻿```html
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <title>Handleiding Lijmdistributiesysteem</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #005A9C;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #005A9C;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffcc00;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 11px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lijmdistributiesysteem</h1>
+    <h3 style="text-align:center;">Bedieningshandleiding</h3>
+
+    <p>
+        <strong>Documentversie:</strong> {{Version}}<br>
+        <strong>Revisiedatum:</strong> {{RevisionDate}}<br>
+        <strong>Serienummer machine:</strong> {{SerialNumber}}
+    </p>
+
+    <h2>1. Inleiding</h2>
+
+    <p>
+        Deze handleiding beschrijft de werking en bediening van het
+        lijmdistributiesysteem dat wordt gebruikt in de productie van
+        golfkarton.
+    </p>
+
+    <p>
+        Het systeem voorziet verschillende lijmstations van lijm vanuit vier
+        opslagtanks via twee onafhankelijke distributielijnen.
+    </p>
+
+    <p>
+        Lees deze handleiding volledig voordat u de machine bedient.
+        Alleen opgeleid personeel mag de installatie bedienen of onderhouden.
+    </p>
+
+
+    <h2>2. Systeemoverzicht</h2>
+
+    <table>
+        <tr>
+            <th>Onderdeel</th>
+            <th>Aantal</th>
+            <th>Beschrijving</th>
+        </tr>
+
+        <tr>
+            <td>Lijmtanks</td>
+            <td>4</td>
+            <td>
+                Opslagtanks waarin de lijm wordt bewaard.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Distributielijnen</td>
+            <td>2</td>
+            <td>
+                Hoofdleidingen die de lijm naar de lijmstations transporteren.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Lijmstations</td>
+            <td>4</td>
+            <td>
+                Stations waar de lijm wordt aangebracht tijdens het productieproces.
+            </td>
+        </tr>
+    </table>
+
+
+    <h2>3. Lijmvoorziening</h2>
+
+    <p>
+        De lijm wordt opgeslagen in één van de vier lijmtanks.
+        Controleer vóór de productie of voldoende lijm beschikbaar is in de
+        geselecteerde tank.
+    </p>
+
+    <p>
+        De operator selecteert de gewenste lijmtank via het bedieningspaneel.
+        Vervolgens transporteert een pomp de lijm vanuit de tank naar één van de
+        twee distributielijnen.
+    </p>
+
+    <p>
+        De gekozen distributielijn voorziet de geselecteerde lijmstations
+        continu van lijm.
+    </p>
+
+
+    <div class="warning">
+        <strong>Waarschuwing:</strong><br>
+        Laat de pompen nooit draaien wanneer een lijmtank leeg is.
+        Drooglopen kan schade veroorzaken aan de pompinstallatie.
+    </div>
+
+
+    <h2>4. Bedieningsprocedure</h2>
+
+    <ol>
+        <li>Controleer of de machine ingeschakeld is.</li>
+        <li>Controleer het lijmniveau van alle tanks.</li>
+        <li>Selecteer de gewenste lijmtank.</li>
+        <li>Selecteer distributielijn 1 of distributielijn 2.</li>
+        <li>Activeer de gewenste lijmstations.</li>
+        <li>Start de lijmpomp.</li>
+        <li>Controleer of de lijmdruk stabiel is.</li>
+        <li>Start de kartonproductie.</li>
+    </ol>
+
+
+    <h2>5. Veiligheidsvoorschriften</h2>
+
+    <ul>
+        <li>
+            Gebruik altijd de voorgeschreven persoonlijke beschermingsmiddelen.
+        </li>
+
+        <li>
+            Verwijder nooit beveiligingen terwijl de machine in werking is.
+        </li>
+
+        <li>
+            Schakel de elektrische voeding uit vóór onderhoudswerkzaamheden.
+        </li>
+
+        <li>
+            Maak de systeemdruk volledig drukloos voordat slangen worden losgemaakt.
+        </li>
+
+        <li>
+            Verwijder gemorste lijm onmiddellijk om slipgevaar te voorkomen.
+        </li>
+    </ul>
+
+
+    <h2>6. Dagelijks onderhoud</h2>
+
+    <table>
+        <tr>
+            <th>Onderhoudstaak</th>
+            <th>Frequentie</th>
+        </tr>
+
+        <tr>
+            <td>Controle lijmniveau</td>
+            <td>Dagelijks</td>
+        </tr>
+
+        <tr>
+            <td>Controle van pompen</td>
+            <td>Dagelijks</td>
+        </tr>
+
+        <tr>
+            <td>Controle leidingen en slangen op lekkage</td>
+            <td>Dagelijks</td>
+        </tr>
+
+        <tr>
+            <td>Reinigen van filters</td>
+            <td>Wekelijks</td>
+        </tr>
+
+        <tr>
+            <td>Controle van kleppen</td>
+            <td>Wekelijks</td>
+        </tr>
+    </table>
+
+
+    <h2>7. Storingen oplossen</h2>
+
+    <table>
+        <tr>
+            <th>Probleem</th>
+            <th>Mogelijke oorzaak</th>
+            <th>Oplossing</th>
+        </tr>
+
+        <tr>
+            <td>Geen lijm aan het station</td>
+            <td>Lege lijmtank</td>
+            <td>Tank vullen of andere tank selecteren.</td>
+        </tr>
+
+        <tr>
+            <td>Lage lijmdruk</td>
+            <td>Probleem met pomp of verstopt filter</td>
+            <td>Pomp controleren en filter reinigen.</td>
+        </tr>
+
+        <tr>
+            <td>Geen lijmtransport</td>
+            <td>Klep gesloten</td>
+            <td>Controleer de klepstand.</td>
+        </tr>
+
+        <tr>
+            <td>Lijmlek</td>
+            <td>Beschadigde slang of verbinding</td>
+            <td>Beschadigd onderdeel vervangen.</td>
+        </tr>
+    </table>
+
+
+    <h2>8. Uitschakelprocedure</h2>
+
+    <ol>
+        <li>Stop de kartonproductie.</li>
+        <li>Stop de lijmpomp.</li>
+        <li>Sluit de lijmkleppen.</li>
+        <li>Reinig de lijmstations.</li>
+        <li>Controleer de installatie op lekkages.</li>
+    </ol>
+
+
+    <div class="footer">
+        Handleiding Lijmdistributiesysteem<br>
+        © {{Year}} {{Company}}
+    </div>
+
+</body>
+</html>
+```
