@@ -16,7 +16,7 @@ namespace DownloadDocs.Services
         #endregion
 
         public async Task<Result<byte[]>> GeneratePdf(string html)
-        {
+        {   //usin puppeteersharp nuget package 
             // Download Chromium de eerste keer
             await new BrowserFetcher().DownloadAsync();
 
