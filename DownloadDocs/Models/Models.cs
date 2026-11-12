@@ -2,7 +2,7 @@
 {
     public class Manual
     {
-        public string Title { get; set; } = "Lijmdistributiesysteem";
+        public string Title { get; set; } = "Pannenkoeken maker";
 
         public string Version { get; set; } = "1.0";
 
@@ -20,7 +20,7 @@
 
 
         // Machine gegevens
-        public int GlueTanks { get; set; } = 4;
+        public int MilkTank { get; set; } = 4;
 
         public int DistributionLines { get; set; } = 2;
 

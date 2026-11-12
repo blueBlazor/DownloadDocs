@@ -1,10 +1,11 @@
 ﻿using DownloadDocs.Helpers;
+using DownloadDocs.Interfaces;
 using PuppeteerSharp;
 using PuppeteerSharp.Media;
 
 namespace DownloadDocs.Services
 {
-    public class ExportService
+    public class ExportService : IExportService
     {
         // Tijdelijke placeholder
         #region Helper

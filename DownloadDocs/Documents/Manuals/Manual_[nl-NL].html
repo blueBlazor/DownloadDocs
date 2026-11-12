@@ -1,9 +1,9 @@
-﻿```html
+﻿
 <!DOCTYPE html>
-<html lang="nl-BE">
+<html lang="{{Language}}">
 <head>
     <meta charset="UTF-8">
-    <title>Handleiding Lijmdistributiesysteem</title>
+    <title>{{Title}} - Bedieningshandleiding</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -62,33 +62,31 @@
 
 <body>
 
-    <h1>Lijmdistributiesysteem</h1>
+    <h1>{{Title}}</h1>
     <h3 style="text-align:center;">Bedieningshandleiding</h3>
 
     <p>
         <strong>Documentversie:</strong> {{Version}}<br>
         <strong>Revisiedatum:</strong> {{RevisionDate}}<br>
-        <strong>Serienummer machine:</strong> {{SerialNumber}}
+        <strong>Serienummer machine:</strong> {{SerialNumber}}<br>
+        <strong>Auteur:</strong> {{Author}}<br>
+        <strong>Bedrijf:</strong> {{Company}}
     </p>
 
     <h2>1. Inleiding</h2>
 
+    <p>{{Introduction}}</p>
+
     <p>
-        Deze handleiding beschrijft de werking en bediening van het
-        lijmdistributiesysteem dat wordt gebruikt in de productie van
-        golfkarton.
+        Deze handleiding beschrijft de werking van het pannenkoekenmakersysteem.
+        De machine is ontworpen om pannenkoeken te bereiden en te bakken
+        met behulp van een automatisch toevoer- en verdeelsysteem voor ingrediënten.
     </p>
 
     <p>
-        Het systeem voorziet verschillende lijmstations van lijm vanuit vier
-        opslagtanks via twee onafhankelijke distributielijnen.
+        Lees deze handleiding zorgvuldig door voordat je de machine gebruikt.
+        Enkel opgeleid personeel mag de machine bedienen of onderhouden.
     </p>
-
-    <p>
-        Lees deze handleiding volledig voordat u de machine bedient.
-        Alleen opgeleid personeel mag de installatie bedienen of onderhouden.
-    </p>
-
 
     <h2>2. Systeemoverzicht</h2>
 
@@ -98,135 +96,65 @@
             <th>Aantal</th>
             <th>Beschrijving</th>
         </tr>
-
         <tr>
-            <td>Lijmtanks</td>
-            <td>4</td>
-            <td>
-                Opslagtanks waarin de lijm wordt bewaard.
-            </td>
+            <td>Melktanks</td>
+            <td>{{MilkTank}}</td>
+            <td>Opslagtanks voor de melkaanvoer.</td>
         </tr>
-
         <tr>
-            <td>Distributielijnen</td>
-            <td>2</td>
-            <td>
-                Hoofdleidingen die de lijm naar de lijmstations transporteren.
-            </td>
+            <td>Verdeelingsleidingen</td>
+            <td>{{DistributionLines}}</td>
+            <td>Hoofdleidingen die de ingrediënten naar de verschillende stations transporteren.</td>
         </tr>
-
         <tr>
-            <td>Lijmstations</td>
-            <td>4</td>
-            <td>
-                Stations waar de lijm wordt aangebracht tijdens het productieproces.
-            </td>
+            <td>Verwerkingsstations</td>
+            <td>{{ApplicationStations}}</td>
+            <td>Stations waar het pannenkoekendeeg wordt verdeeld en verwerkt.</td>
         </tr>
     </table>
 
-
-    <h2>3. Lijmvoorziening</h2>
+    <h2>3. Ingrediëntentoevoer</h2>
 
     <p>
-        De lijm wordt opgeslagen in één van de vier lijmtanks.
-        Controleer vóór de productie of voldoende lijm beschikbaar is in de
-        geselecteerde tank.
+        De melk wordt opgeslagen in de beschikbare melktanks en wordt
+        gebruikt bij de bereiding van het pannenkoekendeeg.
     </p>
 
     <p>
-        De operator selecteert de gewenste lijmtank via het bedieningspaneel.
-        Vervolgens transporteert een pomp de lijm vanuit de tank naar één van de
-        twee distributielijnen.
+        Controleer voordat de productie start of de tanks voldoende melk
+        bevatten voor de geplande productie.
     </p>
 
     <p>
-        De gekozen distributielijn voorziet de geselecteerde lijmstations
-        continu van lijm.
+        De machine verdeelt de benodigde ingrediënten via de verdeelleidingen
+        naar de geselecteerde verwerkingsstations.
     </p>
-
 
     <div class="warning">
         <strong>Waarschuwing:</strong><br>
-        Laat de pompen nooit draaien wanneer een lijmtank leeg is.
-        Drooglopen kan schade veroorzaken aan de pompinstallatie.
+        Controleer altijd het niveau van de ingrediënten voordat je de productie start.
+        Gebruik geen pompen of toevoersystemen wanneer deze leeg zijn.
     </div>
-
 
     <h2>4. Bedieningsprocedure</h2>
 
-    <ol>
-        <li>Controleer of de machine ingeschakeld is.</li>
-        <li>Controleer het lijmniveau van alle tanks.</li>
-        <li>Selecteer de gewenste lijmtank.</li>
-        <li>Selecteer distributielijn 1 of distributielijn 2.</li>
-        <li>Activeer de gewenste lijmstations.</li>
-        <li>Start de lijmpomp.</li>
-        <li>Controleer of de lijmdruk stabiel is.</li>
-        <li>Start de kartonproductie.</li>
-    </ol>
-
+    <p>{{OperationProcedure}}</p>
 
     <h2>5. Veiligheidsvoorschriften</h2>
 
-    <ul>
-        <li>
-            Gebruik altijd de voorgeschreven persoonlijke beschermingsmiddelen.
-        </li>
+    <p>{{SafetyInstructions}}</p>
 
-        <li>
-            Verwijder nooit beveiligingen terwijl de machine in werking is.
-        </li>
+    <div class="warning">
+        <strong>Belangrijk:</strong><br>
+        Volg altijd de veiligheidsvoorschriften voordat je de machine bedient,
+        reinigt of onderhoudt.
+    </div>
 
-        <li>
-            Schakel de elektrische voeding uit vóór onderhoudswerkzaamheden.
-        </li>
+    <h2>6. Onderhoud</h2>
 
-        <li>
-            Maak de systeemdruk volledig drukloos voordat slangen worden losgemaakt.
-        </li>
+    <p>{{MaintenanceInstructions}}</p>
 
-        <li>
-            Verwijder gemorste lijm onmiddellijk om slipgevaar te voorkomen.
-        </li>
-    </ul>
-
-
-    <h2>6. Dagelijks onderhoud</h2>
-
-    <table>
-        <tr>
-            <th>Onderhoudstaak</th>
-            <th>Frequentie</th>
-        </tr>
-
-        <tr>
-            <td>Controle lijmniveau</td>
-            <td>Dagelijks</td>
-        </tr>
-
-        <tr>
-            <td>Controle van pompen</td>
-            <td>Dagelijks</td>
-        </tr>
-
-        <tr>
-            <td>Controle leidingen en slangen op lekkage</td>
-            <td>Dagelijks</td>
-        </tr>
-
-        <tr>
-            <td>Reinigen van filters</td>
-            <td>Wekelijks</td>
-        </tr>
-
-        <tr>
-            <td>Controle van kleppen</td>
-            <td>Wekelijks</td>
-        </tr>
-    </table>
-
-
-    <h2>7. Storingen oplossen</h2>
+    <h2>7. Problemen oplossen</h2>
 
     <table>
         <tr>
@@ -234,49 +162,43 @@
             <th>Mogelijke oorzaak</th>
             <th>Oplossing</th>
         </tr>
-
         <tr>
-            <td>Geen lijm aan het station</td>
-            <td>Lege lijmtank</td>
-            <td>Tank vullen of andere tank selecteren.</td>
+            <td>Geen toevoer van ingrediënten</td>
+            <td>Lege tank of probleem met de toevoer</td>
+            <td>Controleer het tankniveau en het toevoersysteem.</td>
         </tr>
-
         <tr>
-            <td>Lage lijmdruk</td>
-            <td>Probleem met pomp of verstopt filter</td>
-            <td>Pomp controleren en filter reinigen.</td>
+            <td>Ongelijkmatig pannenkoekendeeg</td>
+            <td>Verstopte verdeelleiding</td>
+            <td>Controleer en reinig de verdeelleiding.</td>
         </tr>
-
         <tr>
-            <td>Geen lijmtransport</td>
-            <td>Klep gesloten</td>
-            <td>Controleer de klepstand.</td>
+            <td>Machine warmt niet op</td>
+            <td>Probleem met het verwarmingssysteem</td>
+            <td>Controleer het verwarmingssysteem of contacteer de technische dienst.</td>
         </tr>
-
         <tr>
-            <td>Lijmlek</td>
-            <td>Beschadigde slang of verbinding</td>
-            <td>Beschadigd onderdeel vervangen.</td>
+            <td>Ongelijkmatig bakresultaat</td>
+            <td>Verkeerde temperatuur of instellingen</td>
+            <td>Controleer de instellingen van de machine.</td>
         </tr>
     </table>
-
 
     <h2>8. Uitschakelprocedure</h2>
 
     <ol>
-        <li>Stop de kartonproductie.</li>
-        <li>Stop de lijmpomp.</li>
-        <li>Sluit de lijmkleppen.</li>
-        <li>Reinig de lijmstations.</li>
-        <li>Controleer de installatie op lekkages.</li>
+        <li>Stop de productie van pannenkoeken.</li>
+        <li>Stop de toevoer van ingrediënten.</li>
+        <li>Schakel het verwarmingssysteem uit.</li>
+        <li>Reinig de verwerkingsstations.</li>
+        <li>Controleer de machine op lekken of beschadigingen.</li>
+        <li>Schakel de machine volledig uit wanneer alle stappen zijn afgerond.</li>
     </ol>
 
-
     <div class="footer">
-        Handleiding Lijmdistributiesysteem<br>
+        {{Title}} - Bedieningshandleiding<br>
         © {{Year}} {{Company}}
     </div>
 
 </body>
 </html>
-```

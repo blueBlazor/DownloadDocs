@@ -1,6 +1,4 @@
-﻿using DownloadDocs.Helpers;
-
-namespace DownloadDocs.Handlers
+﻿namespace DownloadDocs.Helpers
 {
     public sealed class HandlerDispatch : IHandlerDispatch
     {
@@ -11,11 +9,10 @@ namespace DownloadDocs.Handlers
             _serviceProvider = serviceProvider;
         }
 
-
-
-        public async Task<Response<byte[]>> DispatchAsyncByte<TRequest>(Request<TRequest> request, CancellationToken ct = default) where TRequest : class
+        public async Task<Response<TResponse>> DispatchAsync<TRequest, TResponse>(Request<TRequest> request, CancellationToken ct = default)
+            where TRequest : class
         {
-            var handler = _serviceProvider.GetRequiredService<IRequestHandler<TRequest, byte[]>>();
+            var handler = _serviceProvider.GetRequiredService<IRequestHandler<TRequest, TResponse>>();
 
             return await handler.HandleAsync(request, ct);
         }

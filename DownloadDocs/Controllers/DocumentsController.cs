@@ -1,5 +1,4 @@
-﻿using DownloadDocs.Handlers;
-using DownloadDocs.Helpers;
+﻿using DownloadDocs.Helpers;
 using DownloadDocs.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,12 +26,14 @@ public class DocumentsController : ControllerBase
 
 
         var request = new Request<GetManualRequest>(new GetManualRequest(templatePath, manual));
+        //HTML converting to PDF
+        var response = _handlerDispatch.DispatchAsync<GetManualRequest, byte[]>(request, ct).Result;
 
-        // TODO: HTML -> PDF
-        var response = _handlerDispatch.DispatchAsyncByte(request, ct);
-        var pdf = response.Result.value;
-
+        if (response.isSuccess == false)
+            return BadRequest(response);
+        var pdf = response.value;
         return File(pdf!, "application/pdf", $"Manual[{culture}].pdf");
+
     }
 
 

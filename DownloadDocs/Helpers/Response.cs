@@ -13,10 +13,10 @@
         InternalServerError = 500,
         ServiceUnavailable = 503
     }
-    public sealed record Response<T>(bool isSuccess, T? value, string? message, int HttpCode) where T : class
+    public sealed record Response<T>(bool isSuccess, T? value, string? message, int HttpCode)
     {
         public static Response<T> Success(T data, string? title, string? message, int HttpCode) => new(true, data, message, HttpCode);
-        public static Response<T> Failure(string? title, string? message, int HttpCode) => new(false, null, message, HttpCode);
+        public static Response<T> Failure(string? title, string? message, int HttpCode) => new(false, default, message, HttpCode);
 
     }
     // ***API ERROR CODES***

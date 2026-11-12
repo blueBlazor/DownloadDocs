@@ -1,13 +1,13 @@
 ﻿using DownloadDocs.Helpers;
+using DownloadDocs.Interfaces;
 using DownloadDocs.Models;
-using DownloadDocs.Services;
 
 namespace DownloadDocs.Handlers
 {
     public class GetPDFHandler : IRequestHandler<GetManualRequest, byte[]>
     {
-        private readonly ExportService _exportService;
-        public GetPDFHandler(ExportService exportService)
+        private readonly IExportService _exportService;
+        public GetPDFHandler(IExportService exportService)
         {
             _exportService = exportService;
         }
